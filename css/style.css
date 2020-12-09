@@ -2,7 +2,11 @@
     font-size: 80px;
     color: whitesmoke;
 }
-.page2Heading {
+.secondHeader {
+    font-size: 50px;
+    color: whitesmoke;
+}
+.page3Heading {
     animation: fadein 3s;
     color: whitesmoke;
 }
@@ -22,15 +26,24 @@ p {
 .hidden {
     display: none;
 }
-
-#forgotten {
-    animation: fadeOut 8s;
-    -moz-animation: fadeOut 8s; /* Firefox */
-    -webkit-animation: fadeOut 8s ; /* Safari and Chrome */
-    -o-animation: fadeOut 8s; /* Opera */
-    display: none;
-    opacity: 0;
+.visible {
+    opacity: 1;
+    transition: opacity 2s linear;
 }
+
+.hidden1 {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 3s, opacity 3s linear;
+}
+/*#forgotten {*/
+/*    animation: fadeOut 8s;*/
+/*    -moz-animation: fadeOut 8s; !* Firefox *!*/
+/*    -webkit-animation: fadeOut 8s ; !* Safari and Chrome *!*/
+/*    -o-animation: fadeOut 8s; !* Opera *!*/
+/*    display: none;*/
+/*    opacity: 0;*/
+/*}*/
 @keyframes fadeOut {
     0% {opacity: 1;}
     100% {opacity: 0;}
