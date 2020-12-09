@@ -6,7 +6,7 @@
     font-size: 50px;
     color: whitesmoke;
 }
-.page3Heading {
+.page3Heading, .page4Heading {
     animation: fadein 3s;
     color: whitesmoke;
 }
@@ -21,6 +21,30 @@ p {
     margin: auto;
     margin-left:5%;
     margin-top: -5%;
+}
+
+.euPicture {
+    position: relative;
+    margin: auto;
+    margin-left:5%;
+}
+#calebHannaPic, #estherSalasPic {
+    border-radius: 50%;
+}
+
+figure {
+    display: inline-block;
+    /*border: 1px dotted gray;*/
+    /*margin: 100px; !* adjust as needed *!*/
+}
+figure img {
+    vertical-align: top;
+}
+figure figcaption {
+    /*border: 1px dotted blue;*/
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 5px;
 }
 
 .hidden {

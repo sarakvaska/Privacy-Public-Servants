@@ -30,7 +30,7 @@
                         <p>Personally Identifiable Information (PII) is defined as "any data that could potentially be used to identify a particular person."<sup><a style="color: white;text-decoration: none;"href="#fn1" id="ref1">1</a></sup> Examples of PII include a person's full name, date of birth, house address, and contact information, among others.</p>
                         <p>Much of this information for any individual can be found on the Internet, through online directory services, data collection agencies, federal websites, and social media.</p>
                         <p>When it comes to privacy, many people are wary of their PII being freely available online. For some, however, this information being publicly available can be dangerous.</p>
-                        <p>In this project, we're going to examine how public servants (including politicians, judges, prosecutors, and law enforcement officers) should have the right to shield their PII from online directories and internet searches—as if they're forgotten from the internet.</p>
+                        <p>In this project, we're going to examine how public servants (including politicians, judges, prosecutors, and law enforcement officers) should have the right to shield their PII from online directories and internet searches—as if they're disappearing from the internet.</p>
 <!--                        put footnote reference on last page -->
 <!--                        <sup id="fn1" style="color:white;"><a style="color: white;text-decoration: none;" href="#ref1" title="Jump back to footnote 1 in the text.">1. Symanovich, Steve. “What Is Personally Identifiable Information (PII)?” LifeLock Official Site. Accessed December 9, 2020. https://www.lifelock.com/learn-identity-theft-resources-what-is-personally-identifiable-information.html. </a></sup>-->
                     </div>
@@ -47,30 +47,44 @@
                 <h1 class="page4Heading">Background</h1>
                 <br>
                 <div class="row">
-                    <div class="col-sm-6">
-
+                    <div class="col-sm-4">
+                        <p>This idea of disappearing from the internet isn't a new one. The Right to Erasure is encoded in the EU’s General Data Protection Regulation (GDPR) in Article 17 as “The data subject shall have the right to obtain from the controller the erasure of personal data concerning him or her without undue delay and the controller shall have the obligation to erase personal data without undue delay”<sup><a style="color: white;text-decoration: none;"href="#fn2" id="ref2">2</a></sup> if one of a number of conditions applies, as seen on the right. The left column lists all the conditions where the right to erasure applies; the right column lists the conditions where the right to erasure doesn't apply.</p>
+                        <p>The problem, however, is that 1) There is no universal legislation in the United States when it comes to Privacy or data protection online, 2) There are no rights to erasure, and 3) Personal information is online and often easily accessible. Not only is this creepy, but it can pose a risk to many—especially public servants. </p>
+                        <p style="font-weight: bolder">So, how can we address this?</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <img class="euPicture hidden" id="page3pic" style="width:800px;border-radius: 25px;"src="img/EU.png">
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="slide5">
             <div class="container">
-                <h1 class="page5Heading">Methodology</h1>
+                <h1 class="page5Heading" style="color: whitesmoke;">Case Studies</h1>
                 <br>
                 <div class="row">
                     <div class="col-sm-6">
-
+                        <h2 class="hidden1" id="caseStudyText" style="color: whitesmoke;">First, let's take a look at a couple case studies. </h2>
+                    </div>
+                    <div class="col-sm-6">
+                        <figure id="figure1" class="hidden1">
+                            <img id="calebHannaPic" style="width:200px;"src="img/hanna_caleb.jpg" alt="Avatar" hspace="80">
+                            <figcaption>Caleb Hanna<br>Delegate for West Virginia<br>House of Representatives</figcaption>
+                        </figure>
+                        <figure id="figure2" class="hidden1">
+                            <img id="estherSalasPic" style="width:200px;" src="img/salas_esther.jpg" alt="Avatar">
+                            <figcaption>Esther Salas<br>U.S. District Judge for<br>District of Newark, NJ</figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="slide6">
             <div class="container">
-                <h1 class="page6Heading">Case Studies</h1>
+                <h1 class="page6Heading">Delegate Caleb Hanna</h1>
                 <br>
                 <div class="row">
                     <div class="col-sm-6">
-
                     </div>
                 </div>
             </div>
@@ -147,7 +161,7 @@
             anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'ninthPage', 'tenthPage', 'eleventhPage'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Intro', 'Question', 'Overview', 'Background', 'Methodology', 'Case Studies', 'Caleb Hanna', 'Esther Salas', 'Analysis', 'Conclusions & Recommendations', 'About Us'],
+            navigationTooltips: ['Intro', 'Question', 'Overview', 'Background', 'Case Studies', 'Caleb Hanna', 'Esther Salas', 'Analysis', 'Conclusions & Recommendations', 'About Us'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -187,7 +201,7 @@
             //Design
             controlArrows: true,
             verticalCentered: true,
-            sectionsColor : ['#000', '#000', '#000', '#000'],
+            sectionsColor : ['#000', '#000', '#000', '#000', '#000', '#000'],
             paddingTop: '3em',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
@@ -215,12 +229,19 @@
             onSlideLeave: function(section, origin, destination, direction){},
             afterLoad: function(origin, destination, direction) {
                 if (destination.anchor == 'secondPage') {
-                    // gradually show image
                     $('#forgotten').addClass('hidden1').removeClass('visible');
                 }
                 if (destination.anchor == 'thirdPage') {
                     // gradually show image
                     $('#page2pic').fadeIn(3000).removeClass("hidden");
+                }
+                if(destination.anchor == 'fourthPage') {
+                    $('#page3pic').fadeIn(3000).removeClass("hidden");
+                }
+                if(destination.anchor == 'fifthPage') {
+                    $('#caseStudyText').removeClass('hidden1').addClass('visible');
+                    $('#figure1').removeClass('hidden1').addClass('visible');
+                    $('#figure2').removeClass('hidden1').addClass('visible');
                 }
             }
         });
