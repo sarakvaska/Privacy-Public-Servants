@@ -1,0 +1,75 @@
+.titleHeader {
+    font-size: 80px;
+    color: whitesmoke;
+}
+.page2Heading {
+    animation: fadein 3s;
+    color: whitesmoke;
+}
+
+p {
+    animation: fadein 3s;
+    color: whitesmoke;
+}
+
+.privacyPicture {
+    position: relative;
+    margin: auto;
+    margin-left:5%;
+    margin-top: -5%;
+}
+
+.hidden {
+    display: none;
+}
+
+#forgotten {
+    animation: fadeOut 8s;
+    -moz-animation: fadeOut 8s; /* Firefox */
+    -webkit-animation: fadeOut 8s ; /* Safari and Chrome */
+    -o-animation: fadeOut 8s; /* Opera */
+    display: none;
+    opacity: 0;
+}
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fadeOut {
+    -webkit-animation-name: fadeOut;
+    animation-name: fadeOut;
+}
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
