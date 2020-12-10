@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" type="text/css" href="css/fullpage.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
 <!--    <link rel="icon" type="image/png" href="images/favicon.png">-->
@@ -65,6 +67,8 @@
                 <div class="row">
                     <div class="col-sm-6">
                         <h2 class="hidden1" id="caseStudyText" style="color: whitesmoke;">First, let's take a look at a couple case studies. </h2>
+                        <br>
+                        <h2 class="hidden1" id="caseStudyText2" style="color: whitesmoke;font-size:25px;">In the first study, we'll investigate how much information we can find online given just a name and position (and what we might be able to do with this information).<br><br> In the second study, we'll look at how the inability to shield PPI and a lack of proper legislation around this issue has had detrimental effects on someone's life. </h2>
                     </div>
                     <div class="col-sm-6">
                         <figure id="figure1" class="hidden1">
@@ -79,30 +83,49 @@
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="slide6">
+        <div class="section" id="calebHannaContainer"data-anchor="slide6" style="background-image: url('img/ch.jpg'); background-size: cover;box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.6)">
             <div class="container">
-                <h1 class="page6Heading">Delegate Caleb Hanna</h1>
-                <br>
+                <h1 class="page6Heading" style="color: whitesmoke; font-size: 30px;">This is Delegate Caleb Hanna.<strong> And this is the information we found.</strong></h1>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <p id="typewriter1" class="hidden1">21-year-old Republican member of the West Virginia House of Delegates</p>
+                        <p id="typewriter2" class="hidden1">Born October 29, 1999</p>
+                        <p id="typewriter3" class="hidden1">Elected at 19 on Nov. 6, 2018 and re-elected in 2020</p>
+                        <p id="typewriter4" class="hidden1">Youngest black American elected to state office</p>
+                        <p id="typewriter5" class="hidden1">Platform of “God, guns, and babies”</p>
+                        <p id="typewriter6" class="hidden1">Adopted as a child into an all-white family</p>
+                        <p id="typewriter7" class="hidden1">Father: Chuck Hanna (65), Mother: Judy Hanna (63)</p>
+                        <p id="typewriter8" class="hidden1">Four sisters and one brother</p>
+                        <p id="typewriter9" class="hidden1">Hanna’s family lived in a 4 bedroom, 1 bathroom house as a child</p>
+                        <p id="typewriter10" class="hidden1">Sold their house in Richwood, WV for $30,000 on August 8, 2012</p>
+                        <p id="typewriter11" class="hidden1">Most likely lives with his parents, a paternal relative, and 2 siblings</p>
+                        <p id="typewriter12" class="hidden1">Previous Address: 62 Dain St, Richwood, WV 26261</p>
+                        <p id="typewriter13" class="hidden1">Current Address: 3127 Nettie Fenwick Rd, Fenwick, WV 26202</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="slide7">
+        <div class="section" data-anchor="slide7" style="background-image: url('img/background-collage.jpg'); background-size: cover;box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.6)">
             <div class="container">
-                <h1 class="page7Heading">Caleb Hanna</h1>
+                <h1 id="caseStudyText3" class="page7Heading" style="color: whitesmoke; font-size: 30px;"><strong>And more.</strong></h1>
                 <br>
                 <div class="row">
-                    <div class="col-sm-6">
-
+                    <div class="col-sm-8">
+                        <p id="typewriter14" class="hidden1">Pro-gun, pro-life, pro-technical school conservative</p>
+                        <p id="typewriter15" class="hidden1">Chair of Committee on Minority Issues</p>
+                        <p id="typewriter16" class="hidden1">Major goal: bring (coal, NG) jobs back to West Virginia and end job crisis</p>
+                        <p id="typewriter17" class="hidden1">Sent $10,000,000 of WV budget surplus to fund Trump’s border wall</p>
+                    </div>
+                    <div class="col-sm-4">
+<!--                        <p id="typewriter2" class="hidden">Animation typewriter style using css steps()</p>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="slide8">
+        <div class="section" data-anchor="slide8" style="color: whitesmoke; background-image: url('img/esther-salas.png'); background-size: cover;box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.6)">
             <div class="container">
-                <h1 class="page8Heading">Esther Salas</h1>
+                <h1 class="page8Heading">This is Judge Esther Salas. <strong>And this is her story.</strong></h1>
                 <br>
                 <div class="row">
                     <div class="col-sm-6">
@@ -158,10 +181,10 @@
             //Navigation
             menu: '#menu',
             lockAnchors: false,
-            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'ninthPage', 'tenthPage', 'eleventhPage'],
+            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eigthPage', 'ninthPage', 'tenthPage', 'eleventhPage'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Intro', 'Question', 'Overview', 'Background', 'Case Studies', 'Caleb Hanna', 'Esther Salas', 'Analysis', 'Conclusions & Recommendations', 'About Us'],
+            navigationTooltips: ['Intro', 'Question', 'Overview', 'Background', 'Case Studies', 'Caleb Hanna Pt. 1', 'Caleb Hanna Pt. 2', 'Esther Salas Pt. 1', 'Conclusions & Recommendations', 'About Us'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -201,7 +224,7 @@
             //Design
             controlArrows: true,
             verticalCentered: true,
-            sectionsColor : ['#000', '#000', '#000', '#000', '#000', '#000'],
+            sectionsColor : ['#000', '#000', '#000', '#000', '#000', '#000', '#000'],
             paddingTop: '3em',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
@@ -233,15 +256,73 @@
                 }
                 if (destination.anchor == 'thirdPage') {
                     // gradually show image
-                    $('#page2pic').fadeIn(3000).removeClass("hidden");
+                    $('#page2pic').fadeIn(2500).removeClass("hidden");
                 }
                 if(destination.anchor == 'fourthPage') {
-                    $('#page3pic').fadeIn(3000).removeClass("hidden");
+                    $('#page3pic').fadeIn(2500).removeClass("hidden");
                 }
                 if(destination.anchor == 'fifthPage') {
                     $('#caseStudyText').removeClass('hidden1').addClass('visible');
+                    $('#caseStudyText2').removeClass('hidden1').addClass('visible');
                     $('#figure1').removeClass('hidden1').addClass('visible');
                     $('#figure2').removeClass('hidden1').addClass('visible');
+                }
+                if(destination.anchor == 'sixthPage') {
+                    $('#typewriter1').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    setTimeout(function(){
+                        $('#typewriter2').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 3500);
+                    setTimeout(function(){
+                        $('#typewriter3').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 6500);
+                    setTimeout(function(){
+                        $('#typewriter4').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 9500);
+                    setTimeout(function(){
+                        $('#typewriter5').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 12500);
+                    setTimeout(function() {
+                        $('#typewriter6').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 15500);
+                    setTimeout(function() {
+                        $('#typewriter7').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 18500);
+                    setTimeout(function() {
+                        $('#typewriter8').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 21500);
+                    setTimeout(function() {
+                        $('#typewriter9').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 24500);
+                    setTimeout(function() {
+                        $('#typewriter10').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 27500);
+                    setTimeout(function() {
+                        $('#typewriter11').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 30500);
+                    setTimeout(function() {
+                        $('#typewriter12').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 33500);
+                    setTimeout(function() {
+                        $('#typewriter13').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 36500);
+                }
+                if(destination.anchor == 'seventhPage') {
+                    $('#caseStudyText3').removeClass('hidden1').addClass('visible');
+                    // $('#figure1').removeClass('hidden1').addClass('visible');
+                    // $('#figure2').removeClass('hidden1').addClass('visible');
+                    $('#typewriter14').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    setTimeout(function(){
+                        $('#typewriter15').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 3500);
+                    setTimeout(function(){
+                        $('#typewriter16').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 6500);
+                    setTimeout(function(){
+                        $('#typewriter17').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 9500);
+                    setTimeout(function(){
+                        $('#typewriter18').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 12500);
                 }
             }
         });
