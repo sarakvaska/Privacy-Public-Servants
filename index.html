@@ -128,24 +128,47 @@
                 <h1 class="page8Heading">This is Judge Esther Salas. <strong>And this is her story.</strong></h1>
                 <br>
                 <div class="row">
-                    <div class="col-sm-6">
-
+                    <div class="col-sm-3"></div>
+                    <div class="col-sm-9">
+                        <p id="typewriter18" class="hidden1">Esther Salas (51) is a U.S. District Court Judge of the District of New Jersey</p>
+                        <p id="typewriter19" class="hidden1">Nominated by Obama in 2011</p>
+                        <p id="typewriter20" class="hidden1">First Hispanic/Latina woman to serve as Magistrate and District Judge in NJ</p>
+                        <p id="typewriter21" class="hidden1">On July 19, 2020, attorney Roy Den Hollander went to Salas’ home</p>
+                        <p id="typewriter22" class="hidden1">Hollander shot her 20-year-old son and her husband</p>
+                        <p id="typewriter23" class="hidden1">Her son died, and her husband was left critically injured</p>
+                        <p id="typewriter24" class="hidden1">Salas, in the basement, was unharmed</p>
+                        <p id="typewriter25" class="hidden1">Hollander was an ardent self described anti-feminist</p>
+                        <p id="typewriter26" class="hidden1">He had just murdered men’s right activist and lawyer Marc Angelucci</p>
+                        <p id="typewriter27" class="hidden1">Hollander died from a self inflicted gunshot, but apparently had terminal cancer</p>
+                        <p id="typewriter28" class="hidden1">He planned to murder a number of people, several of whom were female judges</p>
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="slide9">
             <div class="container">
-                <h1 class="page9Heading">Analysis</h1>
-                <br>
                 <div class="row">
-                    <div class="col-sm-6">
-
+                    <div class="col-sm-5">
+                        <h1 id="caseStudyText4"style="color: whitesmoke; font-size: 30px;"><strong>"In my case, the monster knew where I lived and what church we attended and had a complete dossier on me and my family.
+                            At the moment, there is nothing we can do to stop it, and that is unacceptable," [Judge Salas] said. "My son's death cannot be in vain, which is why I am begging those in power to do something to help my brothers and sisters on the bench."</strong></h1>
+                    </div>
+                    <div class="col-sm-5">
+                        <img class="familyPicture hidden" id="page9pic" style="width:700px;border-radius: 25px;"src="img/salasFamily.png">
                     </div>
                 </div>
             </div>
         </div>
         <div class="section" data-anchor="slide10">
+            <div class="container">
+                <h1 class="page9Heading">Analysis</h1>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" data-anchor="slide11">
             <div class="container">
                 <h1 class="page10Heading">Conclusions & Recommendations</h1>
                 <br>
@@ -156,7 +179,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" data-anchor="slide11">
+        <div class="section" data-anchor="slide12">
             <div class="container">
                 <h1 class="page11Heading">About Us</h1>
                 <br>
@@ -181,10 +204,10 @@
             //Navigation
             menu: '#menu',
             lockAnchors: false,
-            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eigthPage', 'ninthPage', 'tenthPage', 'eleventhPage'],
+            anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage', 'seventhPage', 'eighthPage', 'ninthPage', 'tenthPage', 'eleventhPage'],
             navigation: true,
             navigationPosition: 'right',
-            navigationTooltips: ['Intro', 'Question', 'Overview', 'Background', 'Case Studies', 'Caleb Hanna Pt. 1', 'Caleb Hanna Pt. 2', 'Esther Salas Pt. 1', 'Conclusions & Recommendations', 'About Us'],
+            navigationTooltips: ['Intro', 'Question', 'Overview', 'Background', 'Case Studies', 'Caleb Hanna Pt. 1', 'Caleb Hanna Pt. 2', 'Esther Salas Pt. 1', 'Esther Salas Pt. 2', 'Conclusions & Recommendations'],
             showActiveTooltip: false,
             slidesNavigation: false,
             slidesNavPosition: 'bottom',
@@ -224,7 +247,7 @@
             //Design
             controlArrows: true,
             verticalCentered: true,
-            sectionsColor : ['#000', '#000', '#000', '#000', '#000', '#000', '#000'],
+            sectionsColor : ['#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000', '#000'],
             paddingTop: '3em',
             paddingBottom: '10px',
             fixedElements: '#header, .footer',
@@ -308,8 +331,6 @@
                 }
                 if(destination.anchor == 'seventhPage') {
                     $('#caseStudyText3').removeClass('hidden1').addClass('visible');
-                    // $('#figure1').removeClass('hidden1').addClass('visible');
-                    // $('#figure2').removeClass('hidden1').addClass('visible');
                     $('#typewriter14').removeClass("hidden1").addClass("line-1 anim-typewriter");
                     setTimeout(function(){
                         $('#typewriter15').removeClass("hidden1").addClass("line-1 anim-typewriter");
@@ -323,6 +344,42 @@
                     setTimeout(function(){
                         $('#typewriter18').removeClass("hidden1").addClass("line-1 anim-typewriter");
                     }, 12500);
+                }
+                if(destination.anchor == 'eighthPage') {
+                    $('#typewriter18').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    setTimeout(function(){
+                        $('#typewriter19').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 3500);
+                    setTimeout(function(){
+                        $('#typewriter20').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 6500);
+                    setTimeout(function(){
+                        $('#typewriter21').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 9500);
+                    setTimeout(function(){
+                        $('#typewriter22').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 12500);
+                    setTimeout(function(){
+                        $('#typewriter23').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 15500);
+                    setTimeout(function(){
+                        $('#typewriter24').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 18500);
+                    setTimeout(function(){
+                        $('#typewriter25').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 21500);
+                    setTimeout(function(){
+                        $('#typewriter26').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 24500);
+                    setTimeout(function(){
+                        $('#typewriter27').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 27500);
+                    setTimeout(function(){
+                        $('#typewriter28').removeClass("hidden1").addClass("line-1 anim-typewriter");
+                    }, 30500);
+                }
+                if(destination.anchor == 'ninthPage') {
+                    $('#page9pic').fadeIn(4000).removeClass("hidden");
                 }
             }
         });

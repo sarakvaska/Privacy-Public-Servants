@@ -55,7 +55,6 @@ figure figcaption {
     transition: opacity 2s linear;
 }
 
-
 .hidden1 {
     visibility: hidden;
     opacity: 0;
