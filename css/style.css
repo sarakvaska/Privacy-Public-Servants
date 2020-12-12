@@ -1,9 +1,9 @@
 .titleHeader {
-    font-size: 80px;
+    font-size: 5em;
     color: whitesmoke;
 }
 .secondHeader {
-    font-size: 50px;
+    font-size: 3.125em;
     color: whitesmoke;
 }
 .page3Heading, .page4Heading {
@@ -44,7 +44,7 @@ figure figcaption {
     /*border: 1px dotted blue;*/
     text-align: center;
     color: whitesmoke;
-    padding-top: 5px;
+    padding-top: 0.3125em;
 }
 
 .hidden {
@@ -109,7 +109,7 @@ figure figcaption {
     top: 10%;
     width: 100%;
     margin: 0 auto;
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: 'American Typewriter';
     border-right: .1em solid transparent;
     white-space: nowrap;
